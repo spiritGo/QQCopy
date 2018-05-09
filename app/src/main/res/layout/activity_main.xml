@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/quickIndexBar"
+        android:layout_toStartOf="@id/quickIndexBar" />
+
+    <com.example.spirit.test830.views.QuickIndexBar
+        android:id="@+id/quickIndexBar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#ff0000" />
+
+    <TextView
+        android:id="@+id/tv_pg"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectange_radius_shape"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
